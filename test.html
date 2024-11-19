@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Focus Workaround</title>
+  <style>
+    div {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    div > input, div > button {
+      display: none;
+    }
+
+    div:focus-within {
+      width: 300px;
+      height: 300px;
+    }
+
+    div:focus-within > input, div:focus-within > button {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    /* Invisible dummy element */
+    .dummy {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <!-- Invisible dummy element to take focus -->
+  <div class="dummy" tabindex="0"></div>
+
+  <div tabindex="0">
+    <input type="text" placeholder="Type here">
+    <button onclick="document.querySelector('.dummy').focus()">Remove Focus</button>
+  </div>
+</body>
+</html>
