@@ -1,19 +1,141 @@
-div{
-    background-color: blue;
-    width: 100px;
-    height:100px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select:none;
 }
-
-div > input{
-    width: 150px;
-    margin-left: 25px;
-    display: none;
+header{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #497783;
+        
+       
 }
-
-div:focus-within{
-    width: 300px;
-    height:300px;
-    input{
-        display: initial;   
+header>aside{
+    
+    flex-grow: 1;
+}
+header>aside>figure{
+    display: flex;
+    align-items: center;
+    padding-left: 22%;    
+}
+header>aside>figure>img{
+    width: 7em;
+    height: 7em;
+}
+header>aside>figure>a{
+    width: 20%;
+    font-size: 30px;
+    color: cornsilk;
+    margin-left: 17px;
+    text-decoration: none;
+}
+header>nav{
+    flex-grow: 3;
+}
+ul , li{
+        display: flex;
+        flex-direction: row;
+        background-color: #497783;
+        list-style-type: none;
+        justify-content: center;
+        width: 80%;
+    }
+    ul>li:hover{
+        background: #325159;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+ul > li > a{
+    color: #e4c99b;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 8px;
+    &:hover{
+        background: #325159;
+        padding: 8px;
+        border-radius: 9px;
     }
 }
+
+    #About_me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        background-color: black; /* Solid background color */
+        overflow: hidden;
+        
+      }
+      
+      #About_me::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 50%;
+        height: 50%;
+        background-image: url(logo.png);
+        background-size: cover;
+        background-position: left;
+        opacity: 0.5;
+        z-index: 1;
+      }
+
+    .info{
+        color: white;
+        font-size: 40px;
+        line-height: 5rem;
+        margin-left: 5%;
+        width: 50%;
+    }
+      .wrapper_img{
+        width:45%;
+        position: relative;
+        
+      }
+
+      .wrapper_img::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 1%;
+
+        z-index: 1;
+        opacity:0;
+        transition: all 0.3s ease;
+        display: block;
+        width: 96%;
+        height: -webkit-fill-available;
+        background-image: url(personal_photo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: contrast(0);
+        
+    }
+    .wrapper_img:hover::after {
+        transform: scale(1.1) translateX(-5%);
+        opacity: 1;
+    }
+    .wrapper_img .Personal-Photo:hover+::after{
+        /* transform: scale(2); */
+        width: 110%;
+
+    }
+
+    .Personal-Photo{
+        width:100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 1em;
+        position: relative;
+        z-index: 2;
+        vertical-align: bottom;
+    }
+    
+    
