@@ -88,6 +88,7 @@ ul > li > a{
 
     .info{
         color: white;
+        text-shadow:5px 5px 14px #ffffff;;
         font-size: 40px;
         line-height: 5rem;
         margin-left: 5%;
@@ -99,7 +100,7 @@ ul > li > a{
         
       }
 
-      .wrapper_img::before {
+      .wrapper_img::after {
         content: "";
         position: absolute;
         top: 0%;
