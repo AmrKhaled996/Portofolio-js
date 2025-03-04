@@ -9,22 +9,21 @@ This is a personal portfolio website built using HTML, CSS, and JavaScript. It s
 - **Responsive Design**: Fully adaptable to different screen sizes.
 - **Interactive UI**: Smooth animations and transitions.
 - **Projects Showcase**: Display of personal and professional projects.
-- **Contact Form**: Users can reach out via a contact form.
+
 - **Modern & Clean Design**: A visually appealing layout.
 
 ## 🛠️ Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
-- **Libraries**: Bootstrap (optional), AOS (for animations)
 - **Hosting**: GitHub Pages (or any other hosting service)
 
 ## 📂 Folder Structure
 ```
 📂 Portofolio-js
- ┣ 📂 assets         # Images, icons, and other static files
- ┣ 📂 css            # Stylesheets
- ┣ 📂 js             # JavaScript files for interactivity
- ┣ 📜 index.html     # Main landing page
- ┣ 📜 README.md      # Project documentation
+ ┣ 📂 assets                          # Images, icons, and other static files
+ ┣ 📜 PortofolioStyle                 # Stylesheets
+ ┣ 📜 portofolioScript.js             # JavaScript files for interactivity
+ ┣ 📜 portofolio.html                 # Main landing page
+ 
 ```
 
 ## 📖 Installation & Usage
@@ -38,8 +37,6 @@ This is a personal portfolio website built using HTML, CSS, and JavaScript. It s
    ```
 3. **Open `index.html` in your browser**
 
-## 🌐 Live Demo
-You can view the live portfolio [here](https://your-live-demo-link.com) *(Replace with your live demo link if available)*.
 
 ## 💡 Future Improvements
 - Adding a backend for dynamic content.
@@ -48,8 +45,8 @@ You can view the live portfolio [here](https://your-live-demo-link.com) *(Replac
 
 ## 📬 Contact
 Feel free to reach out via:
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+- **Email**: amrkh20002@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/amrmahanna
 - **GitHub**: [@AmrKhaled996](https://github.com/AmrKhaled996)
 
 ---
