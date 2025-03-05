@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 })
                 
             });
+            overlayWindows.forEach((out, id) => {
+                
+                out.addEventListener("click", () => {
+                    
+                    popOutWindows[id].style.display = 'none';
+                    overlayWindows[id].style.display = 'none';
+                })
+                
+            });
         })
     }, 10);
         
