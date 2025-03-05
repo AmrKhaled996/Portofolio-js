@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     projects.forEach((project, id) => {
    
-        project = `
+        project = `<a href="${projects[id].Link}">
         <div class="projectContainer">
             <div class="projectImg"><img src="${projects[id].img}" alt="! project-name !"> </div>
             
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="category">Category: ${projects[id].Category}</div>
             </div>
         </div>
+        </a>
             `;
             
             projectsContainer.insertAdjacentHTML("beforeend", project);
@@ -149,7 +150,8 @@ const projects =[
 	</g>
 </g>
 </svg>`,
-        img:"assets/HFD.jpg"
+        img:"assets/HFD.jpg",
+        Link:"https://github.com/AmrKhaled996/HFD-database-main"
     },
     {
         name:"MY GYM",
@@ -167,7 +169,8 @@ const projects =[
 <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/>
 <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
 </svg>`,
-        img:"assets/MYGYM.png"
+        img:"assets/MYGYM.png",
+        Link:"https://github.com/AmrKhaled996/mygym"
     },
     {
         name:"Cinema Mangment",
@@ -183,6 +186,7 @@ const projects =[
 <path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"/>
 <path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"/>
 </svg> `,
-        img:"assets/cineam.jpeg"
+        img:"assets/cineam.jpeg",
+        Link:"https://github.com/AmrKhaled996/cinema-mangment"
     }
 ]
