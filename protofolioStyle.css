@@ -53,26 +53,33 @@
         justify-content: center;
         width: 80%;
     }
-   header > nav > ul> li{
+   header > nav > ul>a{
         width: fit-content;
         flex-grow: 1;
         text-align: center;
+        padding: 8px;
+        &:hover{
+            background: #325159;
+            /* padding: 8px; */
+            border-radius: 9px;
+        }
     }
-    header > nav > ul > li > a ,
-    header > nav > ul > li{
+    header > nav > ul > a > li ,
+    header > nav > ul > a{
         color: #e4c99b;
         height: 5rem;
         font-size: 30px;
         align-content: center;
         text-decoration: none;
-        padding: 8px;
+        
         &:hover{
             cursor:pointer;
-            background: #325159;
-            padding: 8px;
+            
+            /* padding: 8px; */
             border-radius: 9px;
         }
     }
+
 
     #About_me {
         min-height: 38rem;
@@ -517,7 +524,7 @@
     }
 
     @media screen  and (max-width: 810px) {
-        header > nav > ul > li > a, header > nav > ul > li {
+        header > nav > ul > a > li, header > nav > ul > a {
             width :100%;
             color: #e4c99b;
             font-size: 30px;
