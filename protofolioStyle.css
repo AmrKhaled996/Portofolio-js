@@ -139,7 +139,7 @@
         display: block;
         width: 96%;
         height: -webkit-fill-available;
-        background-image: url(personal_photo.png);
+        background-image: url(assets/personal_photo.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
